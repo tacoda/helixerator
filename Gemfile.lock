@@ -3,6 +3,7 @@ PATH
   specs:
     factorial (1.0.0)
       helix_runtime (~> 0.7.5)
+      rspec (~> 3.6)
 
 PATH
   remote: crates/fibonacci
