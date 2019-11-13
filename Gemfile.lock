@@ -1,4 +1,10 @@
 PATH
+  remote: crates/factorial
+  specs:
+    factorial (1.0.0)
+      helix_runtime (~> 0.7.5)
+
+PATH
   remote: crates/fibonacci
   specs:
     fibonacci (1.0.0)
@@ -224,6 +230,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
+  factorial!
   fibonacci!
   helix-rails (~> 0.5.0)
   jbuilder (~> 2.5)

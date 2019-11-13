@@ -1,4 +1,5 @@
 require 'slow_fibonacci'
+require 'slow_factorial'
 
 class CalculatorController < ApplicationController
   def fib
@@ -12,12 +13,12 @@ class CalculatorController < ApplicationController
   end
 
   def fact
-    @result = 0
+    @result = Factorial.fact(params[:num].to_i)
     render :fact
   end
 
   def slow_fact
-    @result = 0
+    @result = SlowFactorial.fact(params[:num].to_i)
     render :fact
   end
 end
